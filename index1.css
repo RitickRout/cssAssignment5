@@ -1,0 +1,78 @@
+*{
+    margin: 0;
+}
+
+
+
+.common{
+    display: inline-block;
+}
+.city{
+    position: absolute;
+    background-image: url(city.png);
+    background-size: cover;
+    width:150%;
+    height: 387px;
+    top:153px;
+    z-index: -3;
+    animation: city 5s linear infinite;
+}
+
+@keyframes city{
+    100% {
+        transform: translateX(-140px);
+    }
+}
+
+.sky{
+  position: absolute;
+  height:800px;
+  z-index:-4;
+} 
+.car{
+    position: absolute;
+    top: 349px;
+    left: 376px;
+    z-index: -2;
+}
+.road{
+    position: absolute;
+    background-image: url(road.jpg);
+    width:150%;
+    height:200px;
+    background-size: cover;
+    background-repeat: repeat-x;
+    top: 525px;
+    z-index:-3;
+    animation: road1 5s linear infinite ;
+}
+@keyframes road1{
+    100% {
+        transform: translateX(-100px);
+    }
+
+}
+.wheel1{
+    position: absolute;
+    top: 480px;
+    left: 411px;
+    animation :rotate360 1s linear infinite;
+}
+.wheel2{ 
+    position: absolute;
+    top: 480px;
+    left: 720px;
+    animation :rotate360 1s linear infinite 1s;
+}
+
+@keyframes rotate360 {
+    0% {
+        transform: rotate(
+    0deg);
+    }
+    
+    100% {
+        transform: rotate(
+    360deg);
+    }
+}
